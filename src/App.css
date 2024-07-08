@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body{
+  background-color: rgb(0, 6, 75);
+}
+
+.calender-app{
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.winter{
+  background-image: url("./assets/winter.jpg");
+  background-size: 550px  450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #d8d8d8;
+
+}
+
+.spring{
+  background-image: url("./assets/spring03.jpg") ;
+  background-size: 550px 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#000000;
+  border: 1px solid #d8d8d8;
+}
+
+.summer{
+  background-image: url("./assets/summer01.jpg") ;
+  background-size: 550px 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#000000;
+  border: 1px solid #d8d8d8;
+}
+
+.autunm{
+  background-image: url("./assets/autunm.jpg") ;
+  background-size: 550px 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#000000;
+  border: 1px solid #d8d8d8;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgba(200, 200, 200, 0.6);
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.arrow{
+  width: 25px;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+select{
+  padding: 6px ;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  outline: none;
+}
+
+option{
+  text-align:start;
+}
+
+.daysOfWeek{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.day{
+  text-align: center;
+  padding: 8px;
+}
+
+.dates{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 8px;
+}
+
+.date,
+.empty{
+  padding: 8px;
+  text-align: center;
+  /* border: 1px solid gray; */
+  background-color: rgba(200, 200, 200, 0.6);
+}
+
+.empty{
+  border: none;
+  background-color:transparent
+}
+
+.date:hover{
+  background-color: rgb(1, 122, 203);
+  color: #fff;
+}
+
+.currentDate{
+  background-color:orange;
+  color:#fff;
+}
+
+.currentDate:hover{
+  background-color: rgb(238, 155, 2);
+}
+
+.footer{
+  position: absolute;
+  font-size: 14px;  
+  left: 36%;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer span{
+  font-weight: 600;
+}
